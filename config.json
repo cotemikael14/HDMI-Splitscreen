@@ -1,0 +1,16 @@
+{
+    "streams": [
+        {
+            "name": "New Stream",
+            "source": 0,
+            "display_name": "HDMI",
+            "enabled": true
+        },
+        {
+            "name": "New Stream",
+            "source": 1,
+            "display_name": "HDMI",
+            "enabled": true
+        }
+    ]
+}
