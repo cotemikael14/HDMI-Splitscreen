@@ -7,6 +7,9 @@ Pensé pour un simulateur ou du jeu en écran partagé : chaque console ou PC br
 
 > L'ancienne version Python est conservée dans la branche [`old-python`](../../tree/old-python).
 
+![Deux flux côte à côte (ici sans carte branchée)](docs/deux-flux.png)
+*Deux flux configurés côte à côte — capture prise sans carte de capture branchée.*
+
 ---
 
 ## Sommaire
@@ -35,6 +38,9 @@ Il n'y a rien à installer : l'application tient dans **un seul fichier `hdmi-sp
 1. Branche tes cartes de capture USB **avant** de lancer l'application.
 2. Double-clique sur `hdmi-splitscreen.exe`.
    Si Windows affiche « Windows a protégé votre ordinateur » : **Informations complémentaires → Exécuter quand même** (l'exe n'est pas signé).
+   Tant qu'aucun flux n'est configuré, l'application affiche son logo :
+
+   ![Écran d'accueil sans flux](docs/accueil.png)
 3. Va dans **Fichier → Paramètres**.
 4. Pour chaque carte, clique sur **➕ Ajouter un flux**, puis choisis :
    - **Source** : la carte de capture dans la liste (clique sur 🔄 **Rafraîchir** si elle n'apparaît pas) ;
@@ -69,7 +75,7 @@ Avec « Afficher les noms » **et** « Afficher les infos » décochés, la barr
 - **❌ Supprimer** : retire le flux.
 - **Synchro verticale (V-Sync)** : laisse-la **désactivée** pour le moins de lag. Active-la seulement si tu vois l'image se « déchirer ». Demande de redémarrer l'application.
 
-Si une carte est débranchée ou ne répond pas, sa colonne affiche « Aucun flux vidéo disponible » avec la raison.
+Si une carte est débranchée ou ne répond pas, sa colonne affiche « Aucun flux vidéo disponible » avec la raison (comme sur la capture en haut de cette page).
 
 ## Réglages (config.json)
 
