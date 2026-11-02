@@ -19,7 +19,6 @@ Pensé pour un simulateur ou du jeu en écran partagé : chaque console ou PC br
 - [Réglages (config.json)](#réglages-configjson)
 - [Installer sur un autre PC](#installer-sur-un-autre-pc)
 - [Dépannage](#dépannage)
-- [Compiler soi-même](#compiler-soi-même)
 - [Pourquoi c'est rapide](#pourquoi-cest-rapide)
 
 ---
