@@ -118,25 +118,6 @@ Tous les réglages sont enregistrés automatiquement dans **`config.json`, à c�
 | Fenêtre noire / l'app ne démarre pas | Mets à jour les pilotes de ta carte graphique (l'affichage utilise OpenGL) |
 | Les réglages ne sont pas sauvegardés | Le dossier de l'exe est en lecture seule : déplace l'exe ailleurs (pas dans `Program Files`) |
 
-## Compiler soi-même
-
-### Automatiquement avec GitHub
-Chaque push sur `main` lance une compilation dans **[Actions](../../actions)** (tests + build). On peut aussi la lancer à la main avec **Run workflow**.
-
-### Sur ton PC
-1. Installe Rust : https://rustup.rs
-2. Installe **Visual Studio Build Tools** avec « Développement Desktop en C++ » :
-   ```
-   winget install Microsoft.VisualStudio.2022.BuildTools --override "--wait --passive --add Microsoft.VisualStudio.Workload.VCTools --includeRecommended"
-   ```
-3. Dans le dossier du projet, depuis **PowerShell** (pas Git Bash, qui a une autre commande `link`) :
-   ```
-   cargo build --release
-   ```
-4. Le programme est dans `target\release\hdmi-splitscreen.exe`.
-
-Lancer les tests : `cargo test`.
-
 ### Structure du code
 | Fichier | Rôle |
 |---|---|
